@@ -1,0 +1,147 @@
+html{
+    font-size: 62.6%;
+}
+body{
+    font-size: 1.6rem;
+    background-color:  #d6204ed2;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: #555;
+
+}
+.logincontainor{
+    background-color: #d89cab;
+    width: 30rem;
+    max-width: 100%;
+    text-align: center;
+    padding: 3rem 3rem 5rem;
+    border-radius: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.logincontainor img{
+    width: 70%;
+}
+.form{
+    background-color: #f5f5ff;
+    padding: .5rem 2rem 2rem;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    position: relative;
+
+}
+.form::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #ffffff36;
+    left: 5%;
+    top: -1rem;
+    border-radius: 2rem;
+    z-index: -1;
+
+}
+.group{
+    position: relative;
+    display: grid;
+    grid-template-columns: 3rem auto;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    border-bottom: .1rem solid #555;
+
+}
+.group:nth-child(1){
+    grid-template-columns: 100%;
+    border-bottom: none;
+}
+.group:nth-child(1) span{
+    opacity: .5;
+    font-size: x-small;
+    padding: 0 2rem;
+
+}
+.group input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+
+}
+.group label{
+    position: absolute;
+    left: 3.5rem;
+    top: 1rem;
+    transition: .5s;
+}
+.group input:focus ~ label,
+.group input:not(:placeholder-shown) ~ label{
+    top: -2rem;
+
+}
+.group:nth-child(3){
+    grid-template-columns: 3rem auto 3rem;
+}
+.group:nth-child(3) input[type="password"] ~ .fa-eye{
+   display: none;
+}
+.group:nth-child(3) input[type="text"] ~ .fa-eye-slash{
+   display: none;
+}
+.loginBtn{
+    background-color: #f5f5ff;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 38%;
+    transform: translate(-50%,50%);
+    border: 1rem solid #d89cab;
+    position: relative;
+    
+}
+
+ button{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(
+        to bottom right, #e65a7dd2,#d6204ed2
+    );
+    color: white;
+
+}
+
+/* Not sure why its not working */
+
+/* .loginBtn::before{
+    content: '';
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: 50%;
+    width: 7rem;
+    height: 2rem;
+    border-bottom-left-radius: 1.5rem;
+    box-shadow: -3rem 0 0 #d89cab;
+    z-index: -1;
+}
+.loginBtn::after{
+    content: '';
+    position: absolute;
+    right: calc(100% + 1rem);
+    top: 50%;
+    width: 7rem;
+    height: 2rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 3rem 0 0 #d89cab;
+    z-index: -1;
+} */
+
+
+
+
